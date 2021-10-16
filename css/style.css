@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainColor: rgb(6, 255, 6);
+}
+
+body {
+    font-family: 'Anonymous Pro', monospace;
+    color: var(--mainColor);
+    font-size: 21px;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+p {
+    display: inline-block;
+    position: relative;
+    top: 48%;
+}
+
+#under-score {
+    animation-name: fade-in-out;
+    animation-duration: 1100ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade-in-out {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+} 
